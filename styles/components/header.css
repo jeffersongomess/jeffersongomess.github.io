@@ -1,4 +1,4 @@
-header {
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,7 +6,7 @@ header {
     border-bottom: 10px solid #FFF;
     padding: 10px 20px;
 }
-img {
+.container .main-img {
     display: inline-block;
     padding: 18px 20px;
     margin-right: 0;
@@ -14,7 +14,7 @@ img {
     height: 50px;
 }
 
-img:hover{
+.main-img:hover{
     transform: scale(1.05);
 }
 

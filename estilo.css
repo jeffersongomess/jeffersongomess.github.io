@@ -398,3 +398,92 @@ footer{
     color: #eee;
     font-size: 20px;
 }
+
+@media screen and (min-width: 300px) and (max-width: 750px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav_ul{
+        flex-direction: column;
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        width: 36vw;
+        height: 91vh;
+        background: #23232e;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(110%);
+        opacity: 0.9;
+        transition: transform 0.3s ease-in;
+        display: none;
+    }
+    .nav_ul li{
+        opacity: 1;
+    }
+    .nav_menu_bars{
+        display: block;
+    }
+    .nav_ul_active{
+        transform: translateX(0);
+        display: flex;
+    }
+    .nav_menu_bars_active .line1{
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    .nav_menu_bars_active .line2{
+        opacity: 0;
+    }
+    .nav_menu_bars_active .line3{
+        transform: rotate(45deg) translate(-8px, 7px);
+    }
+    @keyframes navlinksEntrance{
+        0%{
+            opacity: 0;
+            transform: translateX(50px);
+        }100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    .description{
+        display: block;
+        margin-bottom: 250px;
+    }
+    .description_text{
+        text-align: center;
+    }
+    .socialmedia{
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .main_photo img{
+        width: 250px;
+        height: 250px;
+    }
+    .sociallist li a:hover{
+        box-shadow: 0 2px 15px 0 #000070;
+    }
+    .sociallist li a li{
+        color:var(--maincolor);
+    }
+    .title-about{
+        margin-top: 10vh;
+        margin-bottom: 40px;
+    }
+    .grid_container_works{
+        grid-template-columns: repeat(2, 35vw);
+        grid-template-rows: repeat(3, 27vw);
+    }
+    .grid_items_works{
+        width: 25vw;
+        height: 17vw;
+    }
+    .grid_items_div h3{
+        text-align: center;
+        font-size: 2.5vw;
+    }
+    .name{
+        width: 32vw;
+    }
+}

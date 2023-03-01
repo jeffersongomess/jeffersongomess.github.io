@@ -58,7 +58,6 @@ body{
     font-family: 'Poppins', sans-serif;
     background: #ddd;
     color: #333;
-    
 }
 .description{
     height: 91vh;
@@ -176,4 +175,52 @@ h1 span{
     width: 75vw;
     text-align: justify;
     align-self: center;
+}
+.skills{
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+}
+.title-skills{
+    margin: 50px 20px;
+    padding-top: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 50px;
+    list-style: none;
+    grid-column-gap: 45px;
+    grid-row-gap: 50px;
+    width: 75vw;
+    align-self: center;
+}
+.grid_items{
+    justify-self: center;
+    padding: 10px 4px 5px 4px;
+    border-radius: 20px;
+    border: 0.5px solid #aaa;
+    transition-duration: 0.2s;
+}
+.grid_items:hover{
+    box-shadow: 0 2px 15px 0 #aaa;
+
+}
+.grid_items p{
+    padding: 1px;
+    font-size: 14px;
+    text-align: center;
+}
+.grid_items img{
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+
 }
